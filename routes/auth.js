@@ -12,7 +12,7 @@ router
             const Users = db.collection('users')
             const user = await Users.findOne({ username })
             console.log('user', user)
-            if (user) return ctx.body = 'user exists'
+            if (user) return ctx.throw(409)
             
             const result = await Users.insertOne({ username, password })
             console.log('result', result)
@@ -32,7 +32,7 @@ router
             if (!user || user.password !== password) return ctx.throw(401)
             const token = jwt.sign({ username }, ctx.secret)
             ctx.cookies.set('token', token, { signed: true, httpOnly: true })
-            ctx.body = token
+            ctx.body = { token }
         } else {
             ctx.throw(400)
         }

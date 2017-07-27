@@ -7,6 +7,7 @@ const static = require('koa-static')
 const jsonPretty = require('koa-json')
 const logger = require('koa-logger')
 
+const formatter = require('./middlewares/formatter')
 const router = require('./routes/')
 
 const app = new Koa()
@@ -33,6 +34,7 @@ app.use(jsonPretty({ pretty: false, param: 'pretty' }))
 app.use(cors())
 app.use(static('./public'))
 
+app.use(formatter.formatResponse)
 app.use(router.routes())
 
 app.on('error', (err, ctx) => {
