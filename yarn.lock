@@ -59,7 +59,7 @@ chalk@^1.1.3:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-co-body@*, co-body@^5.1.0:
+co-body@*:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/co-body/-/co-body-5.1.1.tgz#d97781d1e3344ba4a820fd1806bddf8341505236"
   dependencies:
@@ -87,15 +87,11 @@ cookies@~0.7.0:
     depd "~1.1.0"
     keygrip "~1.0.1"
 
-copy-to@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/copy-to/-/copy-to-2.0.1.tgz#2680fbb8068a48d08656b6098092bdafc906f4a5"
-
 core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-debug@*, debug@^2.2.0, debug@^2.6.0, debug@^2.6.3, debug@^2.6.8:
+debug@*, debug@^2.2.0, debug@^2.6.3, debug@^2.6.8:
   version "2.6.8"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.8.tgz#e731531ca2ede27d188222427da17821d68ff4fc"
   dependencies:
@@ -269,13 +265,6 @@ koa-body@^2.3.0:
     co-body "*"
     formidable "1.1.1"
 
-koa-bodyparser@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/koa-bodyparser/-/koa-bodyparser-4.2.0.tgz#bce6e08bc65f8709b6d1faa9411c7f0d8938aa54"
-  dependencies:
-    co-body "^5.1.0"
-    copy-to "^2.0.1"
-
 koa-compose@^3.0.0:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/koa-compose/-/koa-compose-3.2.1.tgz#a85ccb40b7d986d8e5a345b3a1ace8eabcf54de7"
@@ -371,10 +360,6 @@ koa@^2.3.0:
     statuses "^1.2.0"
     type-is "^1.5.5"
     vary "^1.0.0"
-
-last-one-wins@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/last-one-wins/-/last-one-wins-1.0.4.tgz#c1bfd0cbcb46790ec9156b8d1aee8fcb86cda22a"
 
 lodash.once@^4.0.0:
   version "4.1.1"
@@ -577,13 +562,6 @@ thenify-all@^1.0.0:
   resolved "https://registry.yarnpkg.com/thenify/-/thenify-3.3.0.tgz#e69e38a1babe969b0108207978b9f62b88604839"
   dependencies:
     any-promise "^1.0.0"
-
-toiletdb@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/toiletdb/-/toiletdb-1.4.0.tgz#6c6f871834b22178c5490f9f832b58c3c7cba852"
-  dependencies:
-    debug "^2.6.0"
-    last-one-wins "^1.0.4"
 
 topo@1.x.x:
   version "1.1.0"
