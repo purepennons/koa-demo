@@ -9,14 +9,16 @@
     "koa-logger": "^3.0.1",
     "koa-router": "^7.2.1",
     "koa-static": "^4.0.1",
-    "mongodb": "^2.2.30"
+    "mongodb": "^2.2.30",
+    "ramda": "^0.24.1"
   },
   "name": "koa-demo",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",

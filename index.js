@@ -38,7 +38,7 @@ app.use(formatter.formatResponse)
 app.use(router.routes())
 
 app.on('error', (err, ctx) => {
-    console.error('err')
+    console.error('err', err)
 })
 
-app.listen(3333)
+app.listen(4000)
