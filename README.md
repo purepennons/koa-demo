@@ -124,6 +124,9 @@ Then the server will run at [http://localhost:4000](http://localhost:4000).
 #### PUT -> /users/:username
 * update a specific user information by `username`
 * arguments
+    - headers
+        - Authorization: bearer [token]
+            - e.g. Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpYXQiOjE1MDQ2Mjc5NDR9.IGqxTQiSk-uGxBzWCxFXA-hqizUi6nfaES-gkGXjx9c
     - body
         - application/json
         - e.g.
