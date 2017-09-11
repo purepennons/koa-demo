@@ -1,12 +1,14 @@
-const Router = require('koa-router')
+const Router = require('koa-router');
 
-const auth = require('./auth')
-const users = require('./users')
+const utils = require('./utils')
+const auth = require('./auth');
+const users = require('./users');
 
-const router = Router()
+const router = Router();
 
 router
-    .use('/auth', auth.routes(), auth.allowedMethods())
-    .use('/users', users.routes(), users.allowedMethods())
+  .use('/utils', utils.routes(), utils.allowedMethods())
+  .use('/auth', auth.routes(), auth.allowedMethods())
+  .use('/users', users.routes(), users.allowedMethods());
 
-module.exports = router
+module.exports = router;
