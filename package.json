@@ -2,9 +2,9 @@
   "dependencies": {
     "bluebird": "^3.5.0",
     "jsonwebtoken": "^7.4.1",
+    "kcors": "2",
     "koa": "^2.3.0",
     "koa-body": "^2.3.0",
-    "koa-cors": "^0.0.16",
     "koa-json": "^2.0.2",
     "koa-logger": "^3.0.1",
     "koa-router": "^7.2.1",
