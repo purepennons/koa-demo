@@ -5,7 +5,7 @@ exports.formatResponse = async (ctx, next) => {
         throw err
     }
 
-    if (ctx.body) {
+    if (ctx.body && ctx.format) {
         ctx.body = {
             code: 200,
             message: 'success',
