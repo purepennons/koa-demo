@@ -8,7 +8,7 @@ const router = Router();
 
 router
   .get('/.well-known/acme-challenge/:hash', async (ctx, next) => {
-    ctx.format = false;
+    ctx.disableFormat = true;
     return ctx.body = process.env.SSL_KEY;
   })
   .use('/utils', utils.routes(), utils.allowedMethods())
